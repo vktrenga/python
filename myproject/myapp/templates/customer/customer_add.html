@@ -1,0 +1,123 @@
+{% include "header_tag.html" %}
+
+{% include "js_script.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Customer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+{% include "header_menu.html" %}
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        {% include "side_menu.html" %}
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+         
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    
+
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Customer  Add/Edit</h3>
+						</div>
+						
+						<div class="panel-body">
+
+									
+      				 	{% if msg != 'None' %}
+    					<h1>English</h1>
+						{% endif %}
+ 						{{msg}}
+							<div class="form">
+							<form  method="POST" action="" >
+									{% csrf_token %}
+									<div class="form-group col-lg-10">
+
+										<label for="customer_name" class="control-label col-lg-2">Customer Name
+											 *</label>
+										<div class="col-lg-6">
+										
+											<input class="form-control" id="customer"
+												name="customer" type="text" value="">
+										</div>
+									</div>
+									<div class="form-group col-lg-10">
+
+										<label for="customer_contact_no" class="control-label col-lg-2">Customer Contact No
+											 *</label>
+										<div class="col-lg-6">
+										
+											<input class="form-control" id="customer_id"
+												name="customer_id" type="text" value="">
+										</div>
+									</div>
+									<div class="form-group col-lg-10">
+
+										<label for="customer_contact_no" class="control-label col-lg-2">Customer Contact No
+											 *</label>
+										<div class="col-lg-6">
+										
+											<input class="form-control" id="mobile_no"
+												name="mobile_no" type="text" value="">
+										</div>
+									</div>
+									<div class="form-group col-lg-10">
+
+										<label for="customer_contact_no" class="control-label col-lg-2">Customer Contact No
+											 *</label>
+										<div class="col-lg-6">
+										
+											<input class="form-control" id="email_no"
+												name="email_no" type="text" value="">
+										</div>
+									</div>
+									<div class="form-group col-lg-10">
+
+										<label for="customer_contact_no" class="control-label col-lg-2">Customer Contact No
+											 *</label>
+										<div class="col-lg-6">
+										
+											<input class="form-control" id="address"
+												name="address" type="text" value="">
+										</div>
+									</div>
+								
+									<div class="form-group col-lg-10">
+										<div class="col-lg-offset-2 col-lg-6">
+											<input type="hidden" name="pk" id="pk"
+												value=""> <input type="hidden"
+												name="action" id="action" value="">
+											<button class="btn btn-success" type="submit" id="submit"
+												name="submit">Save</button>
+											<input class="btn btn-danger" type="reset" value="Reset">
+											</button>
+										</div>
+									</div>
+
+                      </form>
+                      </div>
+              
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    
+
+    <!-- Menu Toggle Script -->
+    
+
+</body>
+</html>

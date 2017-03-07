@@ -1,0 +1,35 @@
+
+
+install python pip
+ sudo apt-get install python-pip
+
+install dijango
+sudo pip install Django==1.9.7
+
+new project
+django-admin startproject myproject
+
+run 
+python manage.py runserver
+
+run with port
+python manage.py runserver localhost:8081
+
+mysql with django
+sudo apt-get install python-mysqldb
+
+start app
+python manage.py startapp myapp
+
+super  user set:
+ python manage.py createsuperuser
+
+migrate
+python manage.py migrate 
+
+makemigrations
+python manage.py makemigrations app_name
+
+migrate app
+python manage.py migrate appname
+
